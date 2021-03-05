@@ -178,7 +178,7 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc( 100vh-60px );
+  min-height: calc(100vh - 60px);
 }
 main .icons {
   margin-top: 1rem;
@@ -243,6 +243,30 @@ main#home h1 {
   opacity: 0.5;
   border-color: #1dacff;
   transition: all 0.5s ease-out;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+.boxes div {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 1.5rem 2.5rem;
+  margin-bottom: 3rem;
+  transition: all 0.5s ease-out;
+}
+.boxes div:hover {
+  padding: 0.5rem 1rem;
+  background: #1dacff;
+  color: #000;
+  cursor: pointer;
+}
+.boxes div:hover span {
+  color: #000;
 }
 
 .btn, .btn-light, .btn-dark {
