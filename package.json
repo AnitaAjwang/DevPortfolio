@@ -4,11 +4,12 @@
   "description": "Developer Portfolio",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+    "start":"sass ./scss/main.scss src/css/main.css --watch"
   },
   "author": "anita ajwang",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "sass": "^1.32.8"
   }
 }
