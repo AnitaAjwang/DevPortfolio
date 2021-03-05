@@ -40,6 +40,17 @@
       height: 150px;
     }
   }
+
+  .about-info {
+    //stack the areas on top of each other
+    grid-template-areas:
+      "bioimage"
+      "bio"
+      "job1"
+      "job2"
+      "job3";
+    grid-template-columns: 1fr; //1 fractional
+  }
 }
 //Smartphones
 @include mediaSm {
