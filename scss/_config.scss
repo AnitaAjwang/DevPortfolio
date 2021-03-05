@@ -2,6 +2,8 @@ $primary-color: #444;
 $secondary-color: #1dacff;
 $show-home-image: true;
 $home-image: url(../images/laptopcode.jpg); // use main.css for folder path not main.scss
+$portrait-big: url(../images/laptopcodeBig.jpg);
+$portrait-small: url(../images/laptopcodeSmall.jpg);
 $background-opacity: 0.9;
 
 @mixin easeOut {
@@ -26,5 +28,28 @@ $background-opacity: 0.9;
         z-index: -1;
       }
     }
+  }
+}
+//Media Query Mixins
+@mixin mediaSm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXl {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }
