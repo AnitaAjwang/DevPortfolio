@@ -5,3 +5,9 @@ Responsive portfolio template
 * HTML
 * CSS
 * SASS
+
+## Before Using
+* Nodejs is installed (https://nodejs.org/)
+
+## Install Dependencies
+* npm install sass
